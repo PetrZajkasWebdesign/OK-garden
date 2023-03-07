@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" style="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>OKGarden</title>
 </head>
 <body>
     <main>
         <section class="banner">
             <div class="content">
-                <h1>Vítá Vás <span>"OK-Garden"</span> team.</h1>
+                <h1><span>OK-Garden</span></h1>
                 <button class="button"><a href="#onas">Vstupte</a></button>
         </section>
         <section class="nav">
@@ -25,7 +27,7 @@
             </nav>
         </section>
 
-        <section id="onas">
+        <section id="glass" id="onas">
             <div class="wrapper">
                 <div class="even-columns">
                     <div>
@@ -46,23 +48,19 @@
                 <div class="even-columns">
                     <div>
                         <img src="images/kruh1.png" alt="Skalka s jehličnany.">
-                        <h3>Skalka,</h3>
                     </div>
                     <div>
                         <img src="images/kruh2.png" alt="Bazén za domem.">
-                        <h3>zahrada,</h3>
                     </div>
                     <div>
                         <img src="images/kruh3.png" alt="Balkón a fialové kvety.">
-                        <h3>nebo balkón...</h3>
                     </div>
                 </div>
-                <h1>Na nás se můžete spolehnout!</h1>
             </div>
         </section>
 
 
-        <section>
+        <section id="glass">
             <div class="wrapper">
                 <div class="even-columns">
                     <div>
@@ -77,6 +75,11 @@
                     </p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="background-image">
+            <div id="glass" class="wrapper">
                 <div>
                     <p>
                     OK GARDEN s.r.o. je aktivní výhradně v oboru zahradní architektura a krajinářství, 
@@ -96,9 +99,18 @@
             </div>
         </section>
 
-        <section class="carousel">
-                <h1>Vaše zkušenosti:</h1>
-                <!-- Carousel here -->
+        <section  id="fotogalerie">
+                <h1>Něco málo z naší práce:</h1>
+                <div class="wrapper">
+                    <div class="main-carousel">
+                        <div class="cell"><img src="images/carousel3.jpg"></div>
+                        <div class="cell"><img src="images/carousel4.jpg"></div>
+                        <div class="cell"><img src="images/carousel5.jpg"></div>
+                        <div class="cell"><img src="images/carousel7.jpg"></div>
+                        <div class="cell"><img src="images/carousel8.jpg"></div>
+                        <div class="cell"><img src="images/carousel10.jpg"></div>   
+                    </div>
+                </div>
                 <div>
                     <button class="button"><a href="https://www.facebook.com/OKgardenCZ">Facebook</a></button>
                 </div>
@@ -117,11 +129,11 @@
             </div>
         </section>
 
-        <section class="img1" id="fotogalerie">
+        <section class="img1">
             <div class="wrapper">
                 <div class="even-columns">
                     <div>
-                        <img src="images/lavicky.jpg" width="600px" height="400px">
+                        <img src="images/carousel8.jpg" width="600px" height="400px">
                     </div>
                     <div>
                         <p>Vítáme Vás na stránkách zahradnické společnosti OK GARDEN s.r.o.</p>
@@ -147,7 +159,7 @@
             <div class="wrapper">
                 <div class="even-columns">
                     <div>
-                        <img src="images/lavicky.jpg" width="600px" height="400px">
+                        <img src="images/carousel5.jpg" width="600px" height="400px">
                     </div>
                     <div>
                         <p>Vítáme Vás na stránkách zahradnické společnosti OK GARDEN s.r.o.</p>
@@ -174,5 +186,15 @@
             <h5>Copyright (C) 2008-2023 OK Garden, spol. s r. o. | PetrZajkasWebDesign.</h5>
         </div>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  freeScroll: true
+});
+    </script>
+    "
 </body>
 </html>

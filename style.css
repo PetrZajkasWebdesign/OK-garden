@@ -1,5 +1,5 @@
 :root {
-   /* --clr-primary-100: #fdfffc;
+   /*--clr-primary-100: #fdfffc;
     --clr-primary-400: #86AC41;
     --clr-primary-900:#7da3a1;
 
@@ -8,12 +8,12 @@
     --clr-neutral-900: #34675c; */
 
     --clr-primary-100: #fdfffc;
-    --clr-primary-400: #f7c331;
-    --clr-primary-900: #dcc7aa;
+    --clr-primary-400: #6a994e;
+    --clr-primary-900: #e0e1dd;
 
 
     --clr-neutral-100: #6b7a8f;
-    --clr-neutral-900: #f7882f;
+    --clr-neutral-900: #a7c957; 
 }
 
 
@@ -29,16 +29,15 @@ html {
 
 body {
     font-family: sans-serif;
-    line-height: 2rem;
-    font-size: large;
-    letter-spacing: 0.15rem;
+    line-height: 1.4rem;
+    font-size: medium;
+    letter-spacing: 0.1rem;
 }
 
 .wrapper {
     width: min(90%, 70rem);
     margin-inline: auto;
     text-align: center;
-    
     padding: 1rem;
 }
 
@@ -87,12 +86,48 @@ section {
 
 .content h1 {
     color: var(--clr-primary-100);
-    text-transform: capitalize;
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 4rem;
     padding-top: 5rem;
-    text-decoration: overline 5px var(--clr-primary-100);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.background-image {
+    background-image: url(images/namesti.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-image p {
+    color: black;
+    font-weight: bold;
+}
+
+#glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+.cell {
+    width: 33%;
+    height: 600px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cell img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+/* Navigation starts here */
 .nav {
     padding-top: 0;
 }
@@ -111,23 +146,19 @@ li {
     text-transform: uppercase;
     display: inline;
     padding-inline: 2rem;
-    padding-block: 2.4rem;
+    padding-block: 2.2rem;
     background-color: var(--clr-primary-400);
 }
 
 nav a {
     color: black;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
 }
 
 nav li:hover {
     background-color: var(--clr-primary-100);
-}
-
-.three-columns {
-
 }
 
 .even-columns {
@@ -145,15 +176,17 @@ nav li:hover {
     }
 }
 
+/* Typography starts here */
 img {
    max-width: 100%;
     display: block;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     font-weight: bolder;
-    color: #324851;
+    color: var(--clr-primary-400);
     padding: 2rem;
 }
 
@@ -165,7 +198,7 @@ h3 {
 p {
     text-align: left;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.15rem;
     padding: 1rem;
     margin-block: 1.5rem;
     line-height: 2rem;
@@ -181,9 +214,9 @@ p {
     border-radius: 30px;
     background-color: var(--clr-neutral-900);
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    color: black);
+    color: black;
     box-shadow: 0 1em 1em -1em black;
 }
 
@@ -199,7 +232,7 @@ p {
     border-radius: 30px;
     background-color: var(--clr-primary-100);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: black;
     box-shadow: 0 1em 1em -1em black;
@@ -209,7 +242,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contact-button:hover,
@@ -223,16 +256,7 @@ a {
 }
 
 footer {
-    background-color:var(--clr-neutral-100);
+    background-color:var(--clr-primary-400);
     color: var(--clr-primary-100);
     padding: 5rem;
 }
-
-
-
-
-
-/*.split {
-    display: flex;
-    gap: 2em;
-}*/
